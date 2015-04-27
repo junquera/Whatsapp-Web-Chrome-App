@@ -1,5 +1,5 @@
-chrome.windows.create({url: 'http://web.whatsapp.com', 
-						width: 620, height: 500, 
-						type: 'popup'
-						}
-);
+chrome.app.runtime.onLaunched.addListener(function() {
+	chrome.browser.openTab({url: 'http://web.whatsapp.com'});
+});
+
+// https://developer.chrome.com/extensions/declare_permissions
