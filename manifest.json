@@ -6,7 +6,7 @@
 	"icons": {
 		"128": "128.png"
 	},    
-	"permissions": ["browser"],
+	"permissions": ["webview", "http://web.whatsapp.com/"],
 	"app": {
 	    "background": {
 	      "scripts": ["main.js"]

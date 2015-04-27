@@ -1,5 +1,4 @@
 chrome.app.runtime.onLaunched.addListener(function() {
-	chrome.browser.openTab({url: 'http://web.whatsapp.com'});
+	chrome.app.window.create('main.html', {state: 'maximized', bounds: {width: screen.availWidth,
+      height: screen.availHeight}});
 });
-
-// https://developer.chrome.com/extensions/declare_permissions
